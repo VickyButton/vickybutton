@@ -1,0 +1,29 @@
+/* Project */
+
+.project {
+    row-gap: var(--padding-2);
+    width: 100%;
+    border-radius: var(--padding-1);
+    /* background: #fff; */
+}
+
+/* Project ImageContainer */
+
+.project>.image-container {
+    height: 40vh;
+}
+
+.project .image-container {
+    border-radius: var(--padding-1);
+    transition: 100ms;
+}
+
+.project .image-container:hover {
+    transform: scale(1.01);
+}
+
+/* Project Text */
+
+.project>.text {
+    color: var(--palette-text);
+}

@@ -1,0 +1,21 @@
+/* LabelledIcon */
+
+.labelled-icon {
+    /* row-gap: var(--padding-0); */
+    padding: var(--padding-1);
+    border-radius: var(--padding-1);
+    box-shadow: var(--box-shadow-1);
+    aspect-ratio: 1;
+    transition: 100ms;
+}
+
+.labelled-icon:hover {
+    transform: scale(1.1);
+}
+
+/* LabelledIcon TSI */
+
+.labelled-icon>.tsi {
+    width: 64px;
+    height: 64px;
+}

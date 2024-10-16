@@ -1,0 +1,57 @@
+/* Section */
+
+.section {
+    width: 100%;
+    gap: var(--padding-default);
+    padding: var(--padding-4) var(--padding-default);
+}
+
+/* Section[Variant] */
+
+.section:not(.default) {
+    background: #fff;
+}
+
+.section.default .text {
+    color: var(--palette-text-dark-mode);
+}
+
+.section.converge-right {
+    -webkit-clip-path: var(--clip-polygon-0);
+    clip-path: var(--clip-polygon-0);
+}
+
+.section.converge-right-end {
+    -webkit-clip-path: var(--clip-polygon-2);
+    clip-path: var(--clip-polygon-2);
+}
+
+.section.converge-left {
+    -webkit-clip-path: var(--clip-polygon-1);
+    clip-path: var(--clip-polygon-1);
+}
+
+.section.converge-left-end {
+    -webkit-clip-path: var(--clip-polygon-3);
+    clip-path: var(--clip-polygon-3);
+}
+
+.section:last-child {
+    padding-bottom: var(--padding-4);
+}
+
+/* Section Children */
+
+.section>* {
+    max-width: var(--main-max-width);
+}
+
+.section>.text {
+    width: 100%;
+}
+
+.section>.image-container {
+    width: 100%;
+    max-width: calc(0.5 * var(--main-max-width));
+    border-radius: var(--padding-default);
+}

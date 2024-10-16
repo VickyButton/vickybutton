@@ -1,0 +1,25 @@
+/* Layout */
+
+.layout {
+    width: 100%;
+    height: 100%;
+}
+
+/* Layout Background */
+
+.layout>#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(120deg, var(--palette-base-0), var(--palette-base-2));
+}
+
+/* Layout Main */
+
+.layout>main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

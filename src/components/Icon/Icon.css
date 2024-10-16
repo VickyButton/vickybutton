@@ -1,0 +1,12 @@
+/* Icon */
+
+.icon {
+    width: var(--icon-length);
+    height: var(--icon-length);
+}
+
+/* Icon Image */
+
+.icon>img {
+    object-fit: contain;
+}

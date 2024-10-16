@@ -1,0 +1,16 @@
+/* ScrollContainer */
+
+.scroll-container {
+    gap: var(--padding-default);
+}
+
+/* ScrollContainer[Direction] */
+
+.scroll-container.row {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.scroll-container.column {
+    overflow-y: scroll;
+}

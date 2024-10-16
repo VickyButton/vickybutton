@@ -1,0 +1,77 @@
+/* Text */
+
+.text {
+    font-family: var(--font-family-oxygen);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-0);
+    color: var(--palette-text);
+    line-height: 2rem;
+}
+
+/* Text[Align] */
+
+.text.align-L {
+    text-align: start;
+}
+
+.text.align-C {
+    text-align: center;
+}
+
+.text.align-R {
+    text-align: end;
+}
+
+/* Text[FontSize] */
+
+.text.font-size-S {
+    font-size: var(--font-size-0);
+}
+
+.text.font-size-SM {
+    font-size: var(--font-size-1);
+}
+
+.text.font-size-M {
+    font-size: var(--font-size-2);
+}
+
+.text.font-size-ML {
+    font-size: var(--font-size-3);
+}
+
+.text.font-size-L {
+    font-size: var(--font-size-4);
+}
+
+/* Text[FontWeight] */
+
+.text.font-weight-L {
+    font-weight: var(--font-weight-0);
+}
+
+.text.font-weight-LM {
+    font-weight: var(--font-weight-1);
+}
+
+.text.font-weight-M {
+    font-weight: var(--font-weight-2);
+}
+
+.text.font-weight-MB {
+    font-weight: var(--font-weight-3);
+}
+
+.text.font-weight-B {
+    font-weight: var(--font-weight-4);
+}
+
+/* Text[Color] */
+
+.text.text-color-B {
+    color: var(--palette-text);
+}
+
+.text.text-color-W {
+    color: var(--palette-text-dark-mode);
+}

@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* Variables */
+
+:root {
+  /* Box Shadow */
+
+  --box-shadow-0: 2px 2px 0 0 var(--palette-shadow);
+  --box-shadow-1: 0 6px 10px 2px var(--palette-shadow);
+  --box-shadow-default: var(--box-shadow-0);
+
+  /* Constants */
+
+  --button-height: 48px;
+  --icon-length: 128px;
+  --main-max-width: 1000px;
+  --splash-height: 100vh;
+  --clip-polygon-height: var(--padding-3);
+  --clip-polygon-0: polygon(0 0, 100% var(--clip-polygon-height), 100% calc(100% - var(--clip-polygon-height)), 0 100%);
+  --clip-polygon-1: polygon(0 var(--clip-polygon-height), 100% 0, 100% 100%, 0 calc(100% - var(--clip-polygon-height)));
+  --clip-polygon-2: polygon(0 0, 100% var(--clip-polygon-height), 100% 100%, 0 100%);
+  --clip-polygon-3: polygon(0 var(--clip-polygon-height), 100% 0, 100% 100%, 0 100%);
+
+  /* Fonts */
+
+  --font-family-oxygen: "Oxygen", sans-serif;
+
+  /* Font Size */
+
+  --font-size-0: 0.8rem;
+  --font-size-1: calc(var(--font-size-0) + 0.2rem);
+  --font-size-2: calc(var(--font-size-1) + 0.2rem);
+  --font-size-3: calc(var(--font-size-2) + 0.2rem);
+  --font-size-4: calc(var(--font-size-3) + 0.2rem);
+
+  /* Font Weight */
+
+  --font-weight-0: 500;
+  --font-weight-1: 600;
+  --font-weight-2: 700;
+  --font-weight-3: 800;
+  --font-weight-4: 900;
+
+  /* Palette */
+
+  --palette-base-0: #008066;
+  --palette-base-1: #40a066;
+  --palette-base-2: #80c066;
+  --palette-base-3: #c0e066;
+  --palette-base-4: #ffff66;
+
+  --palette-link: #72dffa;
+  --palette-shadow: rgba(0, 0, 0, 0.2);
+  --palette-text: #00271f;
+  --palette-text-dark-mode: #fff;
+
+  /* Padding */
+
+  --padding-0: 6px;
+  --padding-1: calc(2 * var(--padding-0));
+  --padding-2: calc(2 * var(--padding-1));
+  --padding-3: calc(2 * var(--padding-2));
+  --padding-4: calc(2 * var(--padding-3));
+  --padding-default: var(--padding-2);
+
+  /* Text Shadow */
+
+  --text-shadow-0: 2px 2px var(--palette-shadow);
+  --text-shadow-default: var(--text-shadow-0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Overwrites */
+
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Helpers */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clickable {
+  cursor: pointer;
 }

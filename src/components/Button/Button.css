@@ -1,0 +1,31 @@
+/* Button */
+
+.button {
+    display: flex;
+    padding: var(--padding-0) var(--padding-1);
+    line-height: var(--button-height);
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-3);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+/* Button[Variant] */
+
+.button.action {
+    border: 3px solid #fff;
+    border-radius: var(--button-height);
+    color: var(--palette-text);
+}
+
+.button.action.dark-mode {
+    color: var(--palette-text-dark-mode);
+}
+
+.button.default:hover>.text {
+    transform: scale(1.1);
+}
